@@ -228,6 +228,8 @@ public class Laboratorio_progra2 {
                         JOptionPane.showMessageDialog(null, "Numero no valido");
                         px = -1;
                         sc.nextLine();
+                   
+                    
                     }
                 }
                 System.out.println("Ingrese la columna que desea mover:");
