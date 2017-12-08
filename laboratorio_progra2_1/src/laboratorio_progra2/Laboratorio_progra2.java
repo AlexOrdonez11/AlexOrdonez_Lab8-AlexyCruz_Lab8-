@@ -78,7 +78,7 @@ public class Laboratorio_progra2 {
                 ux = sc.nextInt();
             } catch (Exception e) {
                 ux = -1;
-                sc.next();
+                sc.nextLine();
             }
             while (ux > 11 || ux < 1) {
                 System.out.println("no existe la fila " );
@@ -87,7 +87,7 @@ public class Laboratorio_progra2 {
                     ux = sc.nextInt();
                 } catch (Exception e) {
                     ux = -1;
-                    sc.next();
+                    sc.nextLine();
                 }
             }
             System.out.println("Ingrese la columna de la pieza que desea mover:");
@@ -95,7 +95,7 @@ public class Laboratorio_progra2 {
                 uy = sc.nextInt();
             } catch (Exception e) {
                 uy = -1;
-                sc.next();
+                sc.nextLine();
             }
             while (uy > 11 || uy < 1) {
                 System.out.println("no existe la columna ");
@@ -104,7 +104,7 @@ public class Laboratorio_progra2 {
                     uy = sc.nextInt();
                 } catch (Exception e) {
                     uy = -1;
-                    sc.next();
+                    sc.nextLine();
                 }
             }
             if (j == true) {
@@ -119,7 +119,7 @@ public class Laboratorio_progra2 {
                             ux = sc.nextInt();
                         } catch (Exception e) {
                             ux = -1;
-                            sc.next();
+                            sc.nextLine();
                         }
                     }
                     System.out.println("Ingrese la columna que desea mover:");
@@ -131,7 +131,7 @@ public class Laboratorio_progra2 {
                             uy = sc.nextInt();
                         } catch (Exception e) {
                             uy = -1;
-                            sc.next();
+                            sc.nextLine();
                         }
                     }
                 }
@@ -148,7 +148,7 @@ public class Laboratorio_progra2 {
                             ux = sc.nextInt();
                         } catch (Exception e) {
                             ux = -1;
-                            sc.next();
+                            sc.nextLine();
                         }
                     }
                     System.out.println("Ingrese la columna que desea mover:");
@@ -157,7 +157,7 @@ public class Laboratorio_progra2 {
                     } catch (Exception e) {
                         JOptionPane.showMessageDialog(null, "Numero no valido");
                         uy = -1;
-                        sc.next();
+                        sc.nextLine();
                     }
                     while (uy > 11 || uy < 1) {
                         System.out.println("no existe la columna ");
@@ -167,7 +167,7 @@ public class Laboratorio_progra2 {
                         } catch (Exception e) {
                             JOptionPane.showMessageDialog(null, "Numero no valido");
                             uy = -1;
-                            sc.next();
+                            sc.nextLine();
                         }
                     }
                 }
@@ -179,7 +179,7 @@ public class Laboratorio_progra2 {
                 px = sc.nextInt();
             } catch (Exception e) {
                 px = -1;
-                sc.next();
+                sc.nextLine();
             }
             while (px > 11 || px < 1) {
                 System.out.println("no existe la fila ");
@@ -188,7 +188,7 @@ public class Laboratorio_progra2 {
                     px = sc.nextInt();
                 } catch (Exception e) {
                     px = -1;
-                    sc.next();
+                    sc.nextLine();
                 }
             }
             int py;
@@ -197,7 +197,7 @@ public class Laboratorio_progra2 {
                 py = sc.nextInt();
             } catch (Exception e) {
                 py = -1;
-                sc.next();
+                sc.nextLine();
             }
             while (py > 11 || py < 1) {
                 System.out.println("no existe la columna ");
@@ -206,7 +206,7 @@ public class Laboratorio_progra2 {
                     py = sc.nextInt();
                 } catch (Exception e) {
                     py = -1;
-                    sc.next();
+                    sc.nextLine();
                 }
             }
             while ((matri[px][py] != "-" && (px == ux || py == uy)) || (piezasintermedias(ux, uy, px, py) != true)) {
@@ -217,7 +217,7 @@ public class Laboratorio_progra2 {
                 } catch (Exception e) {
                     JOptionPane.showMessageDialog(null, "Numero no valido");
                     px = -1;
-                    sc.next();
+                    sc.nextLine();
                 }
                 while (px > 11 || px < 1) {
                     System.out.println("no existe la fila " + px);
@@ -227,7 +227,7 @@ public class Laboratorio_progra2 {
                     } catch (Exception e) {
                         JOptionPane.showMessageDialog(null, "Numero no valido");
                         px = -1;
-                        sc.next();
+                        sc.nextLine();
                     }
                 }
                 System.out.println("Ingrese la columna que desea mover:");
@@ -235,7 +235,7 @@ public class Laboratorio_progra2 {
                     py = sc.nextInt();
                 } catch (Exception e) {
                     py = -1;
-                    sc.next();
+                    sc.nextLine();
                 }
                 while (py > 11 || py < 1) {
                     System.out.println("no existe la columna ");
@@ -244,7 +244,7 @@ public class Laboratorio_progra2 {
                         py = sc.nextInt();
                     } catch (Exception e) {
                         py = -1;
-                        sc.next();
+                        sc.nextLine();
                     }
                 }
             }
